@@ -19,4 +19,15 @@ module.exports = {
       },
     },
   },
+
+  local: {
+    client: 'pg',
+    connection: "postgresql://localhost/blog",
+    migrations: {
+      directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds'
+    }
+  }
 };
